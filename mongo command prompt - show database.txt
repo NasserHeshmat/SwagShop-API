@@ -1,0 +1,68 @@
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nasser>cd C:\Program Files\MongoDB\Server\4.2\bin>
+The syntax of the command is incorrect.
+
+C:\Users\Nasser>cd C:\Program Files\MongoDB\Server\4.2\bin
+
+C:\Program Files\MongoDB\Server\4.2\bin>mongo
+MongoDB shell version v4.2.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("bdbcde1c-d97a-4b9c-a3b7-bbb88a951798") }
+MongoDB server version: 4.2.1
+Server has startup warnings:
+2019-10-29T23:56:33.902+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:56:33.902+0200 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-10-29T23:56:33.904+0200 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-10-29T23:56:33.905+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:56:33.906+0200 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-10-29T23:56:33.908+0200 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2019-10-29T23:56:33.910+0200 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2019-10-29T23:56:33.910+0200 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-10-29T23:56:33.912+0200 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-10-29T23:56:33.914+0200 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-10-29T23:56:33.915+0200 I  CONTROL  [initandlisten]
+---
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and anyone you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+
+> show dbs
+admin           0.000GB
+config          0.000GB
+learning-mongo  0.000GB
+local           0.000GB
+swag-shop       0.000GB
+test            0.000GB
+> use swag-shop
+switched to db swag-shop
+> show collections
+products
+> db.product.find().pretty()
+> db.product.find({})
+> db.products.find().pretty()
+{
+        "_id" : ObjectId("5db8e73eb9a7fa27884cb43d"),
+        "likes" : 0,
+        "price" : 23.99,
+        "__v" : 0
+}
+{
+        "_id" : ObjectId("5db8e81145e3ea1d44369852"),
+        "likes" : 0,
+        "title" : "bobble head",
+        "price" : 23.99,
+        "__v" : 0
+}
+> exit
+bye
+
+C:\Program Files\MongoDB\Server\4.2\bin>

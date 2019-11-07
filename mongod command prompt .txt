@@ -1,0 +1,429 @@
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nasser>cd C:\Program Files\MongoDB\Server\4.2\bin
+
+C:\Program Files\MongoDB\Server\4.2\bin>mongod
+2019-10-29T23:14:47.817+0200 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-10-29T23:14:47.821+0200 I  CONTROL  [initandlisten] MongoDB starting : pid=4776 port=27017 dbpath=C:\data\db\ 64-bit host=DESKTOP-K9DKJDC
+2019-10-29T23:14:47.821+0200 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2019-10-29T23:14:47.822+0200 I  CONTROL  [initandlisten] db version v4.2.1
+2019-10-29T23:14:47.822+0200 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2019-10-29T23:14:47.822+0200 I  CONTROL  [initandlisten] allocator: tcmalloc
+2019-10-29T23:14:47.822+0200 I  CONTROL  [initandlisten] modules: none
+2019-10-29T23:14:47.823+0200 I  CONTROL  [initandlisten] build environment:
+2019-10-29T23:14:47.823+0200 I  CONTROL  [initandlisten]     distmod: 2012plus
+2019-10-29T23:14:47.823+0200 I  CONTROL  [initandlisten]     distarch: x86_64
+2019-10-29T23:14:47.823+0200 I  CONTROL  [initandlisten]     target_arch: x86_64
+2019-10-29T23:14:47.824+0200 I  CONTROL  [initandlisten] options: {}
+2019-10-29T23:14:47.875+0200 I  STORAGE  [initandlisten] Detected data files in C:\data\db\ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-10-29T23:14:47.876+0200 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2516M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2019-10-29T23:14:48.060+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:60794][4776:140709477113904], txn-recover: Recovering log 5 through 6
+2019-10-29T23:14:48.208+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:207897][4776:140709477113904], txn-recover: Recovering log 6 through 6
+2019-10-29T23:14:48.373+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:373097][4776:140709477113904], txn-recover: Main recovery loop: starting at 5/4480 to 6/256
+2019-10-29T23:14:48.554+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:554069][4776:140709477113904], txn-recover: Recovering log 5 through 6
+2019-10-29T23:14:48.678+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:678456][4776:140709477113904], txn-recover: Recovering log 6 through 6
+2019-10-29T23:14:48.758+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383688:757539][4776:140709477113904], txn-recover: Set global recovery timestamp: (0,0)
+2019-10-29T23:14:49.104+0200 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-10-29T23:14:49.415+0200 I  STORAGE  [initandlisten] Timestamp monitor starting
+2019-10-29T23:14:49.458+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:14:49.458+0200 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-10-29T23:14:49.460+0200 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-10-29T23:14:49.461+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:14:49.463+0200 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-10-29T23:14:49.465+0200 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2019-10-29T23:14:49.467+0200 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2019-10-29T23:14:49.469+0200 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-10-29T23:14:49.472+0200 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-10-29T23:14:49.474+0200 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-10-29T23:14:49.489+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:14:49.753+0200 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2019-10-29T23:14:50.108+0200 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2019-10-29T23:14:50.281+0200 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2019-10-29T23:14:50.370+0200 I  COMMAND  [initandlisten] command admin.system.roles command: find { find: "system.roles", $db: "admin" } planSummary: EOF keysExamined:0 docsExamined:0 cursorExhausted:1 numYields:0 nreturned:0 reslen:107 locks:{ ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { r: 1 } }, Database: { acquireCount: { r: 1 } }, Collection: { acquireCount: { r: 2 } }, Mutex: { acquireCount: { r: 1 } } } storage:{ data: { bytesRead: 278 } } protocol:op_msg 122ms
+2019-10-29T23:14:50.430+0200 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2019-10-29T23:14:50.595+0200 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2019-10-29T23:14:50.790+0200 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/db/diagnostic.data'
+2019-10-29T23:14:50.852+0200 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2019-10-29T23:14:50.852+0200 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2019-10-29T23:14:50.856+0200 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2019-10-29T23:14:50.915+0200 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2019-10-29T23:14:51.055+0200 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2019-10-29T23:15:30.831+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52478 #1 (1 connection now open)
+2019-10-29T23:15:30.854+0200 I  NETWORK  [conn1] received client metadata from 127.0.0.1:52478 conn1: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-29T23:15:54.938+0200 I  CONTROL  [thread2] Ctrl-C signal
+2019-10-29T23:15:54.939+0200 I  CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2019-10-29T23:15:55.016+0200 I  NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2019-10-29T23:15:55.017+0200 I  -        [consoleTerminate] Stopping further Flow Control ticket acquisitions.
+2019-10-29T23:15:55.027+0200 I  CONTROL  [consoleTerminate] Shutting down free monitoring
+2019-10-29T23:15:55.028+0200 I  FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2019-10-29T23:15:55.036+0200 I  STORAGE  [consoleTerminate] Deregistering all the collections
+2019-10-29T23:15:55.052+0200 I  STORAGE  [consoleTerminate] Timestamp monitor shutting down
+2019-10-29T23:15:55.061+0200 I  STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2019-10-29T23:15:55.086+0200 I  STORAGE  [consoleTerminate] Shutting down session sweeper thread
+2019-10-29T23:15:55.087+0200 I  STORAGE  [consoleTerminate] Finished shutting down session sweeper thread
+2019-10-29T23:15:55.088+0200 I  STORAGE  [consoleTerminate] Shutting down journal flusher thread
+2019-10-29T23:15:55.136+0200 I  STORAGE  [consoleTerminate] Finished shutting down journal flusher thread
+2019-10-29T23:15:55.137+0200 I  STORAGE  [consoleTerminate] Shutting down checkpoint thread
+2019-10-29T23:15:55.138+0200 I  STORAGE  [consoleTerminate] Finished shutting down checkpoint thread
+2019-10-29T23:15:55.431+0200 I  STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2019-10-29T23:15:55.433+0200 I  CONTROL  [consoleTerminate] now exiting
+2019-10-29T23:15:55.452+0200 I  CONTROL  [consoleTerminate] shutting down with code:12
+
+C:\Program Files\MongoDB\Server\4.2\bin>kill all mongod
+'kill' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\4.2\bin>killall mongod
+'killall' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\4.2\bin>killall
+'killall' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\4.2\bin>mongod killall
+2019-10-29T23:16:58.754+0200 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+Invalid command: killall
+Options:
+  --networkMessageCompressors arg (=snappy,zstd,zlib)
+                                        Comma-separated list of compressors to
+                                        use for network messages
+
+General options:
+  -h [ --help ]                         Show this usage information
+  --version                             Show version information
+  -f [ --config ] arg                   Configuration file specifying
+                                        additional options
+  --configExpand arg                    Process expansion directives in config
+                                        file (none, exec, rest)
+  --ipv6                                Enable IPv6 support (disabled by
+                                        default)
+  --listenBacklog arg (=2147483647)     Set socket listen backlog size
+  --maxConns arg (=1000000)             Max number of simultaneous connections
+  --pidfilepath arg                     Full path to pidfile (if not set, no
+                                        pidfile is created)
+  --timeZoneInfo arg                    Full path to time zone info directory,
+                                        e.g. /usr/share/zoneinfo
+  -v [ --verbose ] [=arg(=v)]           Be more verbose (include multiple times
+                                        for more verbosity e.g. -vvvvv)
+  --quiet                               Quieter output
+  --port arg                            Specify port number - 27017 by default
+  --logpath arg                         Log file to send write to instead of
+                                        stdout - has to be a file, not
+                                        directory
+  --logappend                           Append to logpath instead of
+                                        over-writing
+  --logRotate arg                       Set the log rotation behavior
+                                        (rename|reopen)
+  --timeStampFormat arg                 Desired format for timestamps in log
+                                        messages. One of ctime, iso8601-utc or
+                                        iso8601-local
+  --setParameter arg                    Set a configurable parameter
+  --bind_ip arg                         Comma separated list of ip addresses to
+                                        listen on - localhost by default
+  --bind_ip_all                         Bind to all ip addresses
+  --noauth                              Run without security
+  --transitionToAuth                    For rolling access control upgrade.
+                                        Attempt to authenticate over outgoing
+                                        connections and proceed regardless of
+                                        success. Accept incoming connections
+                                        with or without authentication.
+  --slowms arg (=100)                   Value of slow for profile and console
+                                        log
+  --slowOpSampleRate arg (=1)           Fraction of slow ops to include in the
+                                        profile and console log
+  --auth                                Run with security
+  --clusterIpSourceWhitelist arg        Network CIDR specification of permitted
+                                        origin for `__system` access
+  --profile arg                         0=off 1=slow, 2=all
+  --cpu                                 Periodically show cpu and iowait
+                                        utilization
+  --sysinfo                             Print some diagnostic system
+                                        information
+  --noscripting                         Disable scripting engine
+  --notablescan                         Do not allow table scans
+  --keyFile arg                         Private key for cluster authentication
+  --clusterAuthMode arg                 Authentication mode used for cluster
+                                        authentication. Alternatives are
+                                        (keyFile|sendKeyFile|sendX509|x509)
+
+Replication options:
+  --oplogSize arg                       Size to use (in MB) for replication op
+                                        log. default is 5% of disk space (i.e.
+                                        large is good)
+
+Replica set options:
+  --replSet arg                         arg is <setname>[/<optionalseedhostlist
+                                        >]
+  --enableMajorityReadConcern [=arg(=1)] (=1)
+                                        Enables majority readConcern
+
+Sharding options:
+  --configsvr                           Declare this is a config db of a
+                                        cluster; default port 27019; default
+                                        dir /data/configdb
+  --shardsvr                            Declare this is a shard db of a
+                                        cluster; default port 27018
+
+Storage options:
+  --storageEngine arg                   What storage engine to use - defaults
+                                        to wiredTiger if no data files present
+  --dbpath arg                          Directory for datafiles - defaults to
+                                        \data\db\ which is C:\data\db\ based on
+                                        the current working drive
+  --directoryperdb                      Each database will be stored in a
+                                        separate directory
+  --syncdelay arg (=60)                 Seconds between disk syncs (0=never,
+                                        but not recommended)
+  --journalCommitInterval arg (=100)    how often to group/batch commit (ms)
+  --noIndexBuildRetry                   Do not retry any index builds that were
+                                        interrupted by shutdown
+  --upgrade                             Upgrade db if needed
+  --repair                              Run repair on all dbs
+  --journal                             Enable journaling
+  --nojournal                           Disable journaling (journaling is on by
+                                        default for 64 bit)
+
+Free Monitoring Options:
+  --enableFreeMonitoring arg            Enable Cloud Free Monitoring
+                                        (on|runtime|off)
+  --freeMonitoringTag arg               Cloud Free Monitoring Tags
+
+TLS Options:
+  --tlsOnNormalPorts                    Use TLS on configured ports
+  --tlsMode arg                         Set the TLS operation mode
+                                        (disabled|allowTLS|preferTLS|requireTLS
+                                        )
+  --tlsCertificateKeyFile arg           Certificate and key file for TLS
+  --tlsCertificateKeyFilePassword arg   Password to unlock key in the TLS
+                                        certificate key file
+  --tlsClusterFile arg                  Key file for internal TLS
+                                        authentication
+  --tlsClusterPassword arg              Internal authentication key file
+                                        password
+  --tlsCAFile arg                       Certificate Authority file for TLS
+  --tlsClusterCAFile arg                CA used for verifying remotes during
+                                        inbound connections
+  --tlsCRLFile arg                      Certificate Revocation List file for
+                                        TLS
+  --tlsDisabledProtocols arg            Comma separated list of TLS protocols
+                                        to disable [TLS1_0,TLS1_1,TLS1_2]
+  --tlsAllowConnectionsWithoutCertificates
+                                        Allow client to connect without
+                                        presenting a certificate
+  --tlsAllowInvalidHostnames            Allow server certificates to provide
+                                        non-matching hostnames
+  --tlsAllowInvalidCertificates         Allow connections to servers with
+                                        invalid certificates
+  --tlsFIPSMode                         Activate FIPS 140-2 mode at startup
+  --tlsCertificateSelector arg          TLS Certificate in system store
+  --tlsClusterCertificateSelector arg   SSL/TLS Certificate in system store for
+                                        internal TLS authentication
+  --tlsLogVersions arg                  Comma separated list of TLS protocols
+                                        to log on connect [TLS1_0,TLS1_1,TLS1_2
+                                        ]
+
+WiredTiger options:
+  --wiredTigerCacheSizeGB arg           Maximum amount of memory to allocate
+                                        for cache; Defaults to 1/2 of physical
+                                        RAM
+  --wiredTigerJournalCompressor arg (=snappy)
+                                        Use a compressor for log records
+                                        [none|snappy|zlib|zstd]
+  --wiredTigerDirectoryForIndexes       Put indexes and data in different
+                                        directories
+  --wiredTigerMaxCacheOverflowFileSizeGB arg (=0)
+                                        Maximum amount of disk space to use for
+                                        cache overflow; Defaults to 0
+                                        (unbounded)
+  --wiredTigerCollectionBlockCompressor arg (=snappy)
+                                        Block compression algorithm for
+                                        collection data [none|snappy|zlib|zstd]
+  --wiredTigerIndexPrefixCompression arg (=1)
+                                        Use prefix compression on row-store
+                                        leaf pages
+
+Windows Service Control Manager options:
+  --install                             Install Windows service
+  --remove                              Remove Windows service
+  --reinstall                           Reinstall Windows service (equivalent
+                                        to --remove followed by --install)
+  --serviceName arg                     Windows service name
+  --serviceDisplayName arg              Windows service display name
+  --serviceDescription arg              Windows service description
+  --serviceUser arg                     Account for service execution
+  --servicePassword arg                 Password used to authenticate
+                                        serviceUser
+
+
+C:\Program Files\MongoDB\Server\4.2\bin>killall mongod
+'killall' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files\MongoDB\Server\4.2\bin>mongod
+2019-10-29T23:17:49.337+0200 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-10-29T23:17:49.342+0200 I  CONTROL  [initandlisten] MongoDB starting : pid=2812 port=27017 dbpath=C:\data\db\ 64-bit host=DESKTOP-K9DKJDC
+2019-10-29T23:17:49.343+0200 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2019-10-29T23:17:49.343+0200 I  CONTROL  [initandlisten] db version v4.2.1
+2019-10-29T23:17:49.343+0200 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2019-10-29T23:17:49.344+0200 I  CONTROL  [initandlisten] allocator: tcmalloc
+2019-10-29T23:17:49.344+0200 I  CONTROL  [initandlisten] modules: none
+2019-10-29T23:17:49.345+0200 I  CONTROL  [initandlisten] build environment:
+2019-10-29T23:17:49.345+0200 I  CONTROL  [initandlisten]     distmod: 2012plus
+2019-10-29T23:17:49.346+0200 I  CONTROL  [initandlisten]     distarch: x86_64
+2019-10-29T23:17:49.346+0200 I  CONTROL  [initandlisten]     target_arch: x86_64
+2019-10-29T23:17:49.347+0200 I  CONTROL  [initandlisten] options: {}
+2019-10-29T23:17:49.350+0200 I  STORAGE  [initandlisten] Detected data files in C:\data\db\ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-10-29T23:17:49.351+0200 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2516M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2019-10-29T23:17:49.502+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383869:502210][2812:140709477113904], txn-recover: Recovering log 6 through 7
+2019-10-29T23:17:49.603+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383869:602302][2812:140709477113904], txn-recover: Recovering log 7 through 7
+2019-10-29T23:17:49.698+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383869:698351][2812:140709477113904], txn-recover: Main recovery loop: starting at 6/6272 to 7/256
+2019-10-29T23:17:49.855+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383869:854481][2812:140709477113904], txn-recover: Recovering log 6 through 7
+2019-10-29T23:17:50.004+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383870:3936][2812:140709477113904], txn-recover: Recovering log 7 through 7
+2019-10-29T23:17:50.083+0200 I  STORAGE  [initandlisten] WiredTiger message [1572383870:82998][2812:140709477113904], txn-recover: Set global recovery timestamp: (0,0)
+2019-10-29T23:17:50.315+0200 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-10-29T23:17:50.330+0200 I  STORAGE  [initandlisten] Timestamp monitor starting
+2019-10-29T23:17:50.406+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:17:50.407+0200 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-10-29T23:17:50.408+0200 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-10-29T23:17:50.410+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:17:50.411+0200 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-10-29T23:17:50.412+0200 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2019-10-29T23:17:50.414+0200 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2019-10-29T23:17:50.415+0200 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-10-29T23:17:50.418+0200 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-10-29T23:17:50.419+0200 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-10-29T23:17:50.420+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:17:50.432+0200 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2019-10-29T23:17:50.437+0200 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2019-10-29T23:17:50.438+0200 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2019-10-29T23:17:50.439+0200 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2019-10-29T23:17:50.443+0200 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2019-10-29T23:17:50.591+0200 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/db/diagnostic.data'
+2019-10-29T23:17:50.594+0200 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2019-10-29T23:17:50.594+0200 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2019-10-29T23:17:50.594+0200 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2019-10-29T23:17:50.595+0200 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2019-10-29T23:17:51.002+0200 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2019-10-29T23:18:06.900+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52541 #1 (1 connection now open)
+2019-10-29T23:18:06.914+0200 I  NETWORK  [conn1] received client metadata from 127.0.0.1:52541 conn1: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-29T23:32:25.849+0200 I  NETWORK  [conn1] end connection 127.0.0.1:52541 (0 connections now open)
+2019-10-29T23:32:27.656+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52600 #2 (1 connection now open)
+2019-10-29T23:32:27.662+0200 I  NETWORK  [conn2] received client metadata from 127.0.0.1:52600 conn2: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-29T23:55:20.589+0200 I  NETWORK  [conn2] end connection 127.0.0.1:52600 (0 connections now open)
+2019-10-29T23:56:28.416+0200 I  CONTROL  [thread3] Ctrl-C signal
+2019-10-29T23:56:28.417+0200 I  CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2019-10-29T23:56:28.421+0200 I  NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2019-10-29T23:56:28.422+0200 I  -        [consoleTerminate] Stopping further Flow Control ticket acquisitions.
+2019-10-29T23:56:28.424+0200 I  CONTROL  [consoleTerminate] Shutting down free monitoring
+2019-10-29T23:56:28.425+0200 I  FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2019-10-29T23:56:28.435+0200 I  STORAGE  [consoleTerminate] Deregistering all the collections
+2019-10-29T23:56:28.436+0200 I  STORAGE  [consoleTerminate] Timestamp monitor shutting down
+2019-10-29T23:56:28.437+0200 I  STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2019-10-29T23:56:28.437+0200 I  STORAGE  [consoleTerminate] Shutting down session sweeper thread
+2019-10-29T23:56:28.437+0200 I  STORAGE  [consoleTerminate] Finished shutting down session sweeper thread
+2019-10-29T23:56:28.438+0200 I  STORAGE  [consoleTerminate] Shutting down journal flusher thread
+2019-10-29T23:56:28.523+0200 I  STORAGE  [consoleTerminate] Finished shutting down journal flusher thread
+2019-10-29T23:56:28.523+0200 I  STORAGE  [consoleTerminate] Shutting down checkpoint thread
+2019-10-29T23:56:28.525+0200 I  STORAGE  [consoleTerminate] Finished shutting down checkpoint thread
+2019-10-29T23:56:28.675+0200 I  STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2019-10-29T23:56:28.677+0200 I  CONTROL  [consoleTerminate] now exiting
+2019-10-29T23:56:28.678+0200 I  CONTROL  [consoleTerminate] shutting down with code:12
+
+C:\Program Files\MongoDB\Server\4.2\bin>
+
+C:\Program Files\MongoDB\Server\4.2\bin>mongod
+2019-10-29T23:56:32.851+0200 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-10-29T23:56:32.857+0200 I  CONTROL  [initandlisten] MongoDB starting : pid=9140 port=27017 dbpath=C:\data\db\ 64-bit host=DESKTOP-K9DKJDC
+2019-10-29T23:56:32.858+0200 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2019-10-29T23:56:32.858+0200 I  CONTROL  [initandlisten] db version v4.2.1
+2019-10-29T23:56:32.859+0200 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2019-10-29T23:56:32.859+0200 I  CONTROL  [initandlisten] allocator: tcmalloc
+2019-10-29T23:56:32.860+0200 I  CONTROL  [initandlisten] modules: none
+2019-10-29T23:56:32.860+0200 I  CONTROL  [initandlisten] build environment:
+2019-10-29T23:56:32.861+0200 I  CONTROL  [initandlisten]     distmod: 2012plus
+2019-10-29T23:56:32.861+0200 I  CONTROL  [initandlisten]     distarch: x86_64
+2019-10-29T23:56:32.862+0200 I  CONTROL  [initandlisten]     target_arch: x86_64
+2019-10-29T23:56:32.863+0200 I  CONTROL  [initandlisten] options: {}
+2019-10-29T23:56:32.866+0200 I  STORAGE  [initandlisten] Detected data files in C:\data\db\ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-10-29T23:56:32.867+0200 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=2516M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2019-10-29T23:56:33.029+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:28850][9140:140709477113904], txn-recover: Recovering log 7 through 8
+2019-10-29T23:56:33.125+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:125035][9140:140709477113904], txn-recover: Recovering log 8 through 8
+2019-10-29T23:56:33.244+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:244119][9140:140709477113904], txn-recover: Main recovery loop: starting at 7/5888 to 8/256
+2019-10-29T23:56:33.402+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:402328][9140:140709477113904], txn-recover: Recovering log 7 through 8
+2019-10-29T23:56:33.520+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:520290][9140:140709477113904], txn-recover: Recovering log 8 through 8
+2019-10-29T23:56:33.608+0200 I  STORAGE  [initandlisten] WiredTiger message [1572386193:608356][9140:140709477113904], txn-recover: Set global recovery timestamp: (0,0)
+2019-10-29T23:56:33.804+0200 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-10-29T23:56:33.815+0200 I  STORAGE  [initandlisten] Timestamp monitor starting
+2019-10-29T23:56:33.902+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:56:33.902+0200 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-10-29T23:56:33.904+0200 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-10-29T23:56:33.905+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:56:33.906+0200 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-10-29T23:56:33.908+0200 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2019-10-29T23:56:33.910+0200 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2019-10-29T23:56:33.910+0200 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-10-29T23:56:33.912+0200 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-10-29T23:56:33.914+0200 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-10-29T23:56:33.915+0200 I  CONTROL  [initandlisten]
+2019-10-29T23:56:33.923+0200 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2019-10-29T23:56:33.925+0200 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2019-10-29T23:56:33.925+0200 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2019-10-29T23:56:33.926+0200 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2019-10-29T23:56:33.928+0200 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2019-10-29T23:56:34.092+0200 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/db/diagnostic.data'
+2019-10-29T23:56:34.095+0200 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2019-10-29T23:56:34.095+0200 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2019-10-29T23:56:34.096+0200 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2019-10-29T23:56:34.097+0200 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2019-10-29T23:56:35.004+0200 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2019-10-29T23:57:37.538+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52653 #1 (1 connection now open)
+2019-10-29T23:57:37.547+0200 I  NETWORK  [conn1] received client metadata from 127.0.0.1:52653 conn1: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-29T23:57:45.317+0200 I  NETWORK  [conn1] end connection 127.0.0.1:52653 (0 connections now open)
+2019-10-29T23:57:47.206+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52655 #2 (1 connection now open)
+2019-10-29T23:57:47.213+0200 I  NETWORK  [conn2] received client metadata from 127.0.0.1:52655 conn2: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-29T23:57:47.843+0200 I  NETWORK  [conn2] end connection 127.0.0.1:52655 (0 connections now open)
+2019-10-29T23:57:49.843+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:52657 #3 (1 connection now open)
+2019-10-29T23:57:49.852+0200 I  NETWORK  [conn3] received client metadata from 127.0.0.1:52657 conn3: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T02:59:58.006+0200 I  NETWORK  [conn3] end connection 127.0.0.1:52657 (0 connections now open)
+2019-10-30T03:00:32.197+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54033 #4 (1 connection now open)
+2019-10-30T03:00:32.209+0200 I  NETWORK  [conn4] received client metadata from 127.0.0.1:54033 conn4: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:00:34.166+0200 I  NETWORK  [conn4] end connection 127.0.0.1:54033 (0 connections now open)
+2019-10-30T03:00:39.565+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54035 #5 (1 connection now open)
+2019-10-30T03:00:39.578+0200 I  NETWORK  [conn5] received client metadata from 127.0.0.1:54035 conn5: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:16:51.353+0200 I  NETWORK  [conn5] end connection 127.0.0.1:54035 (0 connections now open)
+2019-10-30T03:16:53.154+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54341 #6 (1 connection now open)
+2019-10-30T03:16:53.167+0200 I  NETWORK  [conn6] received client metadata from 127.0.0.1:54341 conn6: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:22:14.358+0200 I  NETWORK  [conn6] end connection 127.0.0.1:54341 (0 connections now open)
+2019-10-30T03:22:16.131+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54360 #7 (1 connection now open)
+2019-10-30T03:22:16.146+0200 I  NETWORK  [conn7] received client metadata from 127.0.0.1:54360 conn7: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:24:59.356+0200 I  NETWORK  [conn7] end connection 127.0.0.1:54360 (0 connections now open)
+2019-10-30T03:25:01.307+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54384 #8 (1 connection now open)
+2019-10-30T03:25:01.321+0200 I  NETWORK  [conn8] received client metadata from 127.0.0.1:54384 conn8: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:26:07.089+0200 I  NETWORK  [conn8] end connection 127.0.0.1:54384 (0 connections now open)
+2019-10-30T03:26:08.876+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54398 #9 (1 connection now open)
+2019-10-30T03:26:08.895+0200 I  NETWORK  [conn9] received client metadata from 127.0.0.1:54398 conn9: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:26:29.718+0200 I  NETWORK  [conn9] end connection 127.0.0.1:54398 (0 connections now open)
+2019-10-30T03:26:31.519+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54411 #10 (1 connection now open)
+2019-10-30T03:26:31.524+0200 I  NETWORK  [conn10] received client metadata from 127.0.0.1:54411 conn10: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:28:19.687+0200 I  NETWORK  [conn10] end connection 127.0.0.1:54411 (0 connections now open)
+2019-10-30T03:28:21.451+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54418 #11 (1 connection now open)
+2019-10-30T03:28:21.460+0200 I  NETWORK  [conn11] received client metadata from 127.0.0.1:54418 conn11: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:28:22.627+0200 I  NETWORK  [conn11] end connection 127.0.0.1:54418 (0 connections now open)
+2019-10-30T03:28:24.385+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54420 #12 (1 connection now open)
+2019-10-30T03:28:24.400+0200 I  NETWORK  [conn12] received client metadata from 127.0.0.1:54420 conn12: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:28:30.215+0200 I  SHARDING [conn12] Marking collection swag-shop.products as collection version: <unsharded>
+2019-10-30T03:28:30.228+0200 I  STORAGE  [conn12] createCollection: swag-shop.products with generated UUID: 17d3309e-19af-4ff3-b1f0-41a74a6f9d38 and options: {}
+2019-10-30T03:28:30.476+0200 I  INDEX    [conn12] index build: done building index _id_ on ns swag-shop.products
+2019-10-30T03:28:30.554+0200 I  COMMAND  [conn12] command swag-shop.products command: insert { insert: "products", documents: [ { likes: 0, _id: ObjectId('5db8e73eb9a7fa27884cb43d'), price: 23.99, __v: 0 } ], ordered: true, lsid: { id: UUID("6e3fbe28-1400-463e-a2bf-bc1031d9aa54") }, $db: "swag-shop" } ninserted:1 keysInserted:1 numYields:0 reslen:45 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 4 } }, ReplicationStateTransition: { acquireCount: { w: 4 } }, Global: { acquireCount: { w: 4 } }, Database: { acquireCount: { w: 3, W: 1 } }, Collection: { acquireCount: { r: 2, w: 2, W: 1 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 4 } storage:{} protocol:op_msg 312ms
+2019-10-30T03:30:51.988+0200 I  WRITE    [LogicalSessionCacheRefresh] update config.system.sessions command: { q: { _id: { id: UUID("6e3fbe28-1400-463e-a2bf-bc1031d9aa54"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, u: { $currentDate: { lastUse: true } }, multi: false, upsert: true } planSummary: IDHACK keysExamined:0 docsExamined:0 nMatched:0 nModified:0 upsert:1 keysInserted:2 numYields:1 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 2 } storage:{} 137ms
+2019-10-30T03:30:51.991+0200 I  COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: update { update: "system.sessions", ordered: false, allowImplicitCollectionCreation: false, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:1 reslen:171 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 3 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { w: 2 } }, Collection: { acquireCount: { w: 2 } }, Mutex: { acquireCount: { r: 2 } } } flowControl:{ acquireCount: 2 } storage:{} protocol:op_msg 140ms
+2019-10-30T03:31:43.946+0200 I  NETWORK  [conn12] end connection 127.0.0.1:54420 (0 connections now open)
+2019-10-30T03:31:45.785+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54458 #13 (1 connection now open)
+2019-10-30T03:31:45.799+0200 I  NETWORK  [conn13] received client metadata from 127.0.0.1:54458 conn13: { driver: { name: "nodejs", version: "3.3.3" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10240" }, platform: "Node.js v10.16.3, LE, mongodb-core: 3.3.3" }
+2019-10-30T03:33:18.994+0200 I  NETWORK  [listener] connection accepted from 127.0.0.1:54465 #14 (2 connections now open)
+2019-10-30T03:33:18.999+0200 I  NETWORK  [conn14] received client metadata from 127.0.0.1:54465 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 10240)" } }
+2019-10-30T03:33:19.124+0200 I  COMMAND  [conn14] command admin.$cmd appName: "MongoDB Shell" command: replSetGetStatus { replSetGetStatus: 1.0, forShell: 1.0, $db: "admin" } numYields:0 ok:0 errMsg:"not running with --replSet" errName:NoReplicationEnabled errCode:76 reslen:122 locks:{} protocol:op_msg 101ms
+2019-10-30T03:34:59.769+0200 I  SHARDING [conn14] Marking collection swag-shop.product as collection version: <unsharded>
+2019-10-30T03:36:13.779+0200 I  NETWORK  [conn14] end connection 127.0.0.1:54465 (1 connection now open)

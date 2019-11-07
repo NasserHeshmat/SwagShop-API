@@ -1,0 +1,444 @@
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nasser>cd C:\Users\Nasser\Documents\projects\SwagShop-API
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (swagshop-api)
+version: (1.0.0)
+description:
+entry point: (server.js)
+test command:
+git repository: (https://github.com/NasserHeshmat/SwagShop-API.git)
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Nasser\Documents\projects\SwagShop-API\package.json:
+
+{
+  "name": "swagshop-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NasserHeshmat/SwagShop-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NasserHeshmat/SwagShop-API/issues"
+  },
+  "homepage": "https://github.com/NasserHeshmat/SwagShop-API#readme"
+}
+
+
+Is this OK? (yes) yes
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>npm install --save body-parser
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN swagshop-api@1.0.0 No description
+
++ body-parser@1.19.0
+added 22 packages from 17 contributors and audited 32 packages in 11.766s
+found 0 vulnerabilities
+
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>npm install --save express mongoose
+npm WARN swagshop-api@1.0.0 No description
+
++ express@4.17.1
++ mongoose@5.7.7
+added 47 packages from 36 contributors and audited 184 packages in 11.383s
+found 0 vulnerabilities
+
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:6840) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6840) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+(node:6840) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\topologies\server.js:431:11)
+    at Pool.emit (events.js:198:13)
+    at createConnection (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\pool.js:559:14)
+    at connect (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\pool.js:973:11)
+    at makeConnection (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:39:11)
+    at callback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:261:5)
+    at Socket.err (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:286:7)
+    at Object.onceWrapper (events.js:286:20)
+    at Socket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+(node:6840) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:6840) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+(node:7264) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:7264) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+(node:7264) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\topologies\server.js:431:11)
+    at Pool.emit (events.js:198:13)
+    at createConnection (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\pool.js:559:14)
+    at connect (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\pool.js:973:11)
+    at makeConnection (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:39:11)
+    at callback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:261:5)
+    at Socket.err (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\mongodb\lib\core\connection\connect.js:286:7)
+    at Object.onceWrapper (events.js:286:20)
+    at Socket.emit (events.js:198:13)
+    at emitErrorNT (internal/streams/destroy.js:91:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+(node:7264) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:7264) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>mongod
+'mongod' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+(node:7716) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:7716) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>killall mongod
+'killall' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>mongod
+'mongod' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+(node:6932) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6932) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:8100) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:8100) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishList.js:7
+    products:[{type:objectId,ref:'Product'}]
+                    ^
+
+ReferenceError: objectId is not defined
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishList.js:7:21)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[nodemon] app crashed - waiting for file changes before starting...
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishList.js:7
+    products:[{type:objectId,ref:'Product'}]
+                    ^
+
+ReferenceError: objectId is not defined
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishList.js:7:21)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishlist.js:7
+    products:[{type:objectId,ref:'Product'}]
+                    ^
+
+ReferenceError: objectId is not defined
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishlist.js:7:21)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[nodemon] app crashed - waiting for file changes before starting...
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+
+C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishlist.js:7
+    products:[{type:objectId,ref:'Product'}]
+                    ^
+
+ReferenceError: objectId is not defined
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\model\wishlist.js:7:21)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:8:16)
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+    at startup (internal/bootstrap/node.js:283:19)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:6692) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6692) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:1484) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:1484) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:7144) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:7144) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:4336) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+[nodemon] restarting due to changes...
+(node:4336) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] starting `node server.js`
+(node:6948) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6948) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+^CTerminate batch job (Y/N)?
+^C
+C:\Users\Nasser\Documents\projects\SwagShop-API>nodemon server.js
+[nodemon] 1.19.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching dir(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+(node:2040) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:2040) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:4876) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:4876) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+TypeError: Product is not a constructor
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:16:19
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\raw-body\index.js:224:16)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:6636) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6636) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:6224) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:6224) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+TypeError: Product is not a constructor
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:16:19
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\raw-body\index.js:224:16)
+TypeError: Product is not a constructor
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:16:19
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\raw-body\index.js:224:16)
+TypeError: Product is not a constructor
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:16:19
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\raw-body\index.js:224:16)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:8792) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:8792) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:9124) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:9124) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+TypeError: Product is not a constructor
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\server.js:16:19
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\Nasser\Documents\projects\SwagShop-API\node_modules\raw-body\index.js:224:16)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:7432) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:7432) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:10120) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:10120) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+(node:7492) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:7492) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Swag Shop API running on port 3000...
